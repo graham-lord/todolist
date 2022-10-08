@@ -27,7 +27,7 @@
                     <ul>
                     @foreach($todolists as $todolist)
                         <li>
-                            - {{ $todolist->content }}
+                            <div class="content"> {{ $todolist->content }}</div>
                             <form action="{{ route('destroy', $todolist->id) }}" method="POST">
                                 @csrf
                                 @method('delete')
@@ -38,7 +38,6 @@
                     </ul>
                 @else
                     <p>You have no task(s).</p>
-                    <hr>
                 @endif
             </div>
             <div class="lower">
