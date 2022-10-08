@@ -9,6 +9,9 @@
        
     </head>
     <body class="antialiased">
+        <div class="header">
+            Activity 4 - Basic Laravel-based project
+        </div>
         <div class="card">
             <div class="upper">
                 <h1>To-do List</h1>
@@ -43,6 +46,9 @@
                     <div class="pending">You have {{ count($todolists) }} pending task(s).</div>
                 @endif
             </div>
+        </div>
+        <div class="footer">
+            Team Kanto
         </div>
     
     </body>
